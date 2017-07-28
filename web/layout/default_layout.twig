@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>{% block title %}{% endblock %}</title>
+	    <title> Afro's Shop</title>
+
+	    <!-- Styles CSS -->
+		{% block stylesheet %}{% endblock %}
+		<link rel="shortcut icon" href="{{assets}}/img/logo1.png">
+		<!-- css -->
+		<link href="{{assets}}/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="{{assets}}/css/style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="{{assets}}/css/font-awesome.min.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<!--// css -->
+		<!-- font -->
+		<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Petit+Formal+Script|Berkshire+Swash" rel="stylesheet">
+
+		<!-- JavaScript  -->
+		{% block javascript %}{% endblock %}
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="{{assets}}/js/jquery-1.11.1.min.js"></script>
+		<script src="{{assets}}/js/bootstrap.js"></script>
+
+	</head>
+	{% block body %}
+	<body>
+		<!-- Encabezado  -->
+		{% block header %}{% endblock %}
+		<div class="header-top-w3layouts">
+			<div class="container">
+				<div class="col-md-6 col-xs-12 logo-w3">
+					<a href="index.twig"><h1><strong>AFRO´S SHOP</strong><span></span></h1></a>
+				</div>
+				<div class="col-md-5 phone-w3l">
+					<ul>
+						<li><span class="fa fa-whatsapp fa-2x" aria-hidden="true"></span></li>
+						<li>320 623 7200</li>
+					</ul>  
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="header-bottom-w3ls">
+			<div class="container">
+				<div class="col-md-8 navigation-agileits">
+					<nav class="navbar navbar-default" id="menu">
+						<div class="navbar-header nav_2">
+							<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div> 
+						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+							<ul class="nav navbar-nav ">
+								<li class=" active"><a href="index.twig" class="hyper "><span>Inicio</span></a></li>	
+								<li class="dropdown ">
+									<a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown" ><span>Productos<b class="caret"></b></span></a>
+										<ul class="dropdown-menu multi">
+											<div class="row">
+												<div class="col-sm-4">
+													<ul class="multi-column-dropdown">
+														<li><a href="jackies.twig"><i class="fa fa-angle-right" aria-hidden="true"></i>Aunt Jackie's</a></li>
+														<li><a href="cantu.twig"> <i class="fa fa-angle-right" aria-hidden="true"></i>Cantu</a></li>
+														<li><a href="frutos.twig"><i class="fa fa-angle-right" aria-hidden="true"></i>Frutos del Paraíso</a></li>
+												
+													</ul>
+												
+												</div>
+												<div class="col-sm-4">
+													<ul class="multi-column-dropdown">
+														<li><a href="kanechom.twig"><i class="fa fa-angle-right" aria-hidden="true"></i>Kanechom</a></li>
+														<li><a href="nevox.twig"><i class="fa fa-angle-right" aria-hidden="true"></i>Nevox</a></li>
+														<li><a href="skala.twig"><i class="fa fa-angle-right" aria-hidden="true"></i>Skala</a></li>
+												
+													</ul>						
+												</div>
+												<div class="col-sm-4 w3l">
+													<a href="women.twig"><img src="http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c69.0.941.941/16110498_1348866025173527_3920922171899117568_n.jpg?ig_cache_key=MTQzNTk1Mjc0OTExMTIwNDI5NQ%3D%3D.2.c" class="img-responsive" alt=""></a>
+												</div>
+												<div class="clearfix"></div>
+											</div>	
+										</ul>
+								</li>
+								<li><a href="about.twig" class="hyper"><span>Afro Looks</span></a></li>
+								<li><a href="contact.twig" class="hyper"><span>Encuentranos</span></a></li>
+								<li><a href="contact.twig" class="hyper"><span>Blog</span></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+						<script>
+						$(document).ready(function(){
+							$(".dropdown").hover(            
+								function() {
+									$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+									$(this).toggleClass('open');        
+								},
+								function() {
+									$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+									$(this).toggleClass('open');       
+								}
+							);
+						});
+						</script>
+				<div class="col-md-3 search-agileinfo">
+					<form action="#" method="post">
+						<input type="search" name="Search" placeholder="Search for a Product..." required="">
+						<button type="submit" class="btn btn-default search" aria-label="Left Align">
+							<i class="fa fa-search" aria-hidden="true"> </i>
+						</button>
+					</form>
+				</div>
+				<div class="col-md-1 cart-wthree">
+					<div class="cart"> 
+						<form action="#" method="post" class="last"> 
+							<input type="hidden" name="cmd" value="_cart" />
+							<input type="hidden" name="display" value="1" />
+							<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+						</form>  
+					</div>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!-- Contenido  -->
+		{% block container %}{% endblock %}
+
+		<!-- Pie de Pagina  -->
+		{% block footer %}{% endblock %}
+		<div id="footer2">
+			<div class="container">
+				<div class="col-md-4 footer-grids fgd0">
+
+				<table class="table table-responsive lead" id="tabla">
+					<tr> <p>1234k Avenue, 4th block, <br> New York City. <br> <a href="mailto:info@example.com">info@example.com</a> </p> </tr>
+					<tr> <td><a href="#"><img src="{{assets}}/img/twitter.png" class="img-responsive"></a></td> 
+						 <td><a href="https://www.instagram.com/afros_shop/"><img src="{{assets}}/img/instagram.png" class="img-responsive"></a></td> </tr>
+					<tr> <td><a href="https://www.facebook.com/AFROS.SHOP/"><img src="{{assets}}/img/facebook.png" class="img-responsive"></a></td> 
+						 <td><a href="#"><img src="{{assets}}/img/linkedin.png" class="img-responsive"></a></td> </tr>
+				</table>
+				</div>
+				<div class="col-md-4 footer-grids fgd2">
+					<h4>Nuestras Promesas</h4> 
+					<p> El cumplimiento de las promesas en los negocios es simple, consiste en hacer lo que te comprometiste a realizar para un cliente o proveedor. Cada vez que cumples tus compromisos, ya sean pequeños o grandes, puede generar confianza.</p>
+				</div>
+				<div class="col-md-4 footer-grids fgd3">
+
+					<table class="table table-responsive" id="tabla2">
+						<tbody>
+							<tr>
+								<td> <img src="{{assets}}/img/novex.jpg"></td>
+								<td> <img src="{{assets}}/img/frutosdelparaiso.png"></td>
+								<td> <img src="{{assets}}/img/kanechom.jpg"></td>
+							</tr>
+							<tr>
+								<td> <img src="{{assets}}/img/skala.jpg"></td>
+								<td> <img src="{{assets}}/img/Aunt-Jackies.png"></td>
+								<td> <img src="{{assets}}/img/cantu.png"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+				<div class="clearfix"></div>
+				<p class="copy-right">© 2017 Afro's Shop . Todos los derechos reservados | Diseño de <a href="http://www.oceanycode.com" target="_blank"> OceanyCode</a></p>
+			</div>
+		</div>
+
+		<!-- Script JS -->
+		{% block script %}{% endblock %}
+		 <script type="text/javascript">
+		 	  $(window).load(function(){
+		        $('#ModalInicial').modal('show');
+		    });
+		 </script>
+
+		 <script type="text/javascript">
+		 	$(document).ready(function(e){
+		    		$(".img-check").click(function(){
+						$(this).toggleClass("check");
+					});
+			});
+		 </script>
+
+	<!-- cart-js -->
+		<script src="js/minicart.js"></script>
+		<script>
+	        w3ls1.render();
+
+	        w3ls1.cart.on('w3sb1_checkout', function (evt) {
+	        	var items, len, i;
+
+	        	if (this.subtotal() > 0) {
+	        		items = this.items();
+
+	        		for (i = 0, len = items.length; i < len; i++) {
+	        			items[i].set('shipping', 0);
+	        			items[i].set('shipping2', 0);
+	        		}
+	        	}
+	        });
+	    </script> 		
+	</body>
+	{% endblock %}
+</html>
+
+	
+
+	
+
+
+	
